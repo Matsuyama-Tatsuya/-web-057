@@ -8,6 +8,10 @@ body{
 	line-height:1.5;
 
 	background:#fff;
+	
+	background-image: url("haikei.jpg");
+  
+	background-size: cover;
 
 	-webkit-text-size-adjust: none;
 }
