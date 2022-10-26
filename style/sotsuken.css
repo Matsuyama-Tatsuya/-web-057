@@ -390,3 +390,23 @@ font-weight:bold;
   #gallery .grid{width:220px;}	
 }
 
+
+/* スマートフォン 縦向き(ポートレート)の場合 */
+@media only screen and (max-width:480px){
+	#mainBanner{margin-left:1px;}
+	#mainBanner h2,#mainBanner h3{font-size:75%;}
+	
+	#sub .grid{
+	float:none;
+	width:98%;
+	}
+	
+	#sub .grid h3{padding:10px 5px;}
+	
+	#sub ul.list{padding:10px;}
+	
+	#sub ul.list li{
+	padding-bottom:3px;
+	margin-bottom:3px;
+	}
+}
