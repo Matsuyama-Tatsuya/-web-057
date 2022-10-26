@@ -9,7 +9,7 @@ body{
 
 	background:#fff; 
 	
-	background-image: url("haikei.jpeg");
+	background-image: url("../images/haikei.jpeg");
   
 	background-size: cover;
 
@@ -323,3 +323,70 @@ font-weight:bold;
 #footer a:hover{color:#ccc;}
 
 #footer .copyright{font-size:11px;}
+
+
+@media only screen and (min-width:960px){	
+	#wrapper,.inner{
+	width:940px;
+	padding:0;
+	}
+	
+	#wrapper{padding-bottom:20px;}
+	
+  nav div.panel{
+	display:block !important;
+	float:right;
+	}
+
+	a#menu{display:none;}
+
+	nav#mainNav ul{
+	float:right;
+	overflow:hidden;
+	}
+
+	* html nav#mainNav ul{height:1%;}
+
+	nav#mainNav ul li{
+	float:left;
+	margin:0 5px;
+	text-align:center;
+	}
+
+	nav#mainNav ul a{
+	font-size:13px;
+	display:block;
+	padding:10px;
+	border-bottom:3px solid #fff;
+	}
+
+	nav#mainNav ul span{
+	color:#aaa;
+	font-size:10px;
+	}
+
+	nav#mainNav ul li.active a,nav#mainNav ul a:hover{border-color:#1f1f1f;}
+	
+	#mainBanner img{max-width:936px;}
+	
+	/* グリッド全体 */
+	.gridWrapper{
+	width:960px;
+	margin:0 0 0 -20px;
+	}
+	
+	/* グリッド共通 ベース:トップページ4カラム */
+	.grid{
+	float:left;
+	width:218px;
+	margin-left:20px;
+	}
+	
+	/* サブコンテンツ + フッター グリッド(3カラム) */
+	#sub .grid, #footer .grid{width:298px;}
+	#footer .grid{border:0;}
+	
+	#gallery{margin-left:-10px;}
+  #gallery .grid{width:220px;}	
+}
+
