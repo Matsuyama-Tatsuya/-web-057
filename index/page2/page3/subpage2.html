@@ -12,8 +12,9 @@
 <script src="js/css3-mediaqueries.js"></script>
 <![endif]-->
 
-<!--<script src="js/jquery1.7.2.min.js"></script>
-<script src="js/script.js"></script>-->
+<script src="../../../JavaScript/jquery-3.6.1.min.js"></script>
+<script src="../../../JavaScript/quiz.js"></script>
+<script src="../../../JavaScript/jquery.min.js"></script>
 </head>
 <body>
 
@@ -28,17 +29,13 @@
 		<!-- / ロゴ -->
     
 	  <!-- メインナビゲーション -->
-    <nav id="mainNav">
-  		<a class="menu" id="menu">→MENU</a>
-			<div class="panel">
-				<ul>
-					<li><a href="../../sotsuken.html">トップページ<br><span>Top </span></a></li>
-					<li><a href="../subpage.html">音楽基礎編<br><span>Basic</span></a></li>
-					<li class="active"><a href="./subpage2.html">音楽チャレンジ編<br><span>challenge</span></a></li>
-					<li><a href="./page4/subpage3.html">お問い合わせ<br><span>Contact</span></a></li>
-				</ul>
-      </div>
-    </nav>
+	  <nav>
+		<a href="../../sotsuken.html">トップページ</a>
+		<a href="../subpage.html">音楽基礎編</a>
+		<a href="./subpage2.html">音楽チャレンジ編</a>
+		<a href="./page4/subpage3.html">アンケート</a>
+		<div class="animation start-home"></div>
+	</nav>
 		<!-- メインナビゲーション -->
     
   </div>
@@ -67,13 +64,30 @@
 		<li><a href="#">　　　応用問題</a></li>
 	</div>
 	  </ol>
+
+	  <!-- / クイズ -->
+	  
+	  <div class="quiz_area">
+		<div class="quiz_set"><!-- 回答中の表示 -->
+		<h1>第<span class="quiz_no">1</span>問</h1>
+		<div class="quiz_question">ここに問題文が入りますここに問題文が入りますここに問題文が入りますここに問題文が入りますここに問題文が入ります</div>
+		<div class="quiz_ans_area">
+			<ul>
+				<li>選択肢1</li>
+				<li>選択肢2</li>
+				<li>選択肢3</li>
+				<li>選択肢4</li>
+			</ul>
+		</div>
+		<div class="quiz_area_bg"></div><!--  画面に被せる黒背景 -->
+   		 <div class="quiz_area_icon"></div><!-- マルorバツを中央に表示させるエリア -->
+	</div>
+	<div class="quiz_result"></div><!-- クイズ終了後の表示 -->
+</div>
 	
 	
 	
-	
-	
-	
-	
+
 	
 	
 	<!-- 4カラム　他のページに飛ぶやつ -->
