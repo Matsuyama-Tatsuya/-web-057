@@ -20,16 +20,28 @@ $(function(){
             answer : ['楽器の演奏', '動物の鳴き声', '車や電車の音', '人間の喋り声']
         }
         ,{
-            question : '東京ヤクルトスワローズのホーム球場はどれ？',
-            answer : ['明治神宮野球場', '東京ドーム', 'メットライフドーム', 'ZOZOマリンスタジアム']
+            question : '「♩」この音符の名称として正しいのはどれ？',
+            answer : ['４分音符', '２分音符', '８分音符', '16分音符']
         }
         ,{
-            question : '元号「平成」が終わったのはいつ？',
-            answer : ['2019年4月30日', '2019年3月31日', '2019年5月31日', '2019年2月28日']
+            question : '「♪」この音符の名称として正しいのはどれ？',
+            answer : ['８分音符', '４分音符', '２分音符', '16分音符']
         }
         ,{
-            question : 'SMAPが出したシングル曲で最も売れたのはどれ？',
-            answer : ['世界に一つだけの花', 'オレンジ', '青いイナズマ', 'SHAKE']
+            question : '「♯」この変化記号の意味として正しいのはどれ？',
+            answer : ['半音上がる', '半音下がる', '元の音に戻る', '全音上がる']
+        }
+        ,{
+            question : '4/4拍子の説明として正しいのはどれ？',
+            answer : ['１小節の中に拍が４つあるもの', '１小節の中に拍が３つあるもの', '１小節の中に拍が２つあるもの', '１小節の中に拍が５つあるもの']
+        }
+        ,{
+            question : '「♮」この変化記号の名称として正しいのはどれ',
+            answer : ['ナチュラル', 'シャープ', 'フラット', 'クレシェンド']
+        }
+        ,{
+            question : '付点◯◯音符/休符は元の音符の長さ何倍の長さ？',
+            answer : ['１.５倍', '２倍', '３倍', '４倍']
         }
     );
     
@@ -77,7 +89,7 @@ $(function(){
         quizArea.html(quiz_html); //表示を元に戻す
         quiz_cnt = 0;
         quiz_success_cnt = 0;
-        //aryQuiz = arrShuffle(aryQuiz); //毎回出題の順番をシャッフルしたい場合はここのコメントを消してね
+        aryQuiz = arrShuffle(aryQuiz); //出題の順番をシャッフル
         quizShow();
     }
     
@@ -91,7 +103,7 @@ $(function(){
         var success = aryQuiz[quiz_cnt]['answer'][0];
         //現在の選択肢表示を削除する
         quizArea.find('.quiz_ans_area ul').empty();
-        //問題文の選択肢をシャッフルさせる(自作関数) .concat()は参照渡し対策
+        //問題文の選択肢をシャッフル(自作関数) .concat()は参照渡し対策
         var aryHoge = arrShuffle(aryQuiz[quiz_cnt]['answer'].concat());
         //問題文の配列を繰り返し表示する
         $.each(aryHoge, function(key, value){
