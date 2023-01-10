@@ -1577,15 +1577,7 @@ font-weight:bold;
 		height:1300px;
 	  }
 	
-	.sankoubunken{
-		padding: 0.5em 1em;	
-   	 	margin: 3em 0;
-		font-size: 15px;
-    		color: #5d627b;
-   		 background: white;
-    		border-bottom: solid 3px #5d627b;
-    		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-	}
+	
 
 	.logo a{
 		font-size:17px;
@@ -1795,15 +1787,7 @@ font-weight:bold;
 		height:1300px;
 	  }
 	
-	.sankoubunken{
-		padding: 0.5em 1em;	
-   	 	margin: 3em 0;
-		font-size: 15px;
-    		color: #5d627b;
-   		 background: white;
-    		border-bottom: solid 3px #5d627b;
-    		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-	}
+	
 
 	.logo a{
 		font-size:17px;
@@ -2029,7 +2013,7 @@ font-weight:bold;
 	  }
 
 	  .sankoubunken p{
-		font-size: 4%;
+		font-size: 20%;
 
 	  }
 
